@@ -120,8 +120,8 @@
 <body class="animated-gradient-bg">
 
     <header class="fixed w-full z-50 transition-all duration-300" id="navbar">
-        <div class="max-w-7xl mx-auto px-6 py-4">
-            <div class="flex justify-between items-center glass-card rounded-full px-8 py-3">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3">
+            <div class="flex justify-between items-center glass-card rounded-full px-6 sm:px-8 py-3">
                 <a href="#" class="text-2xl font-bold tracking-tighter bg-gradient-to-r from-accent-blue to-accent-purple bg-clip-text text-transparent">
                     CODENAME
                 </a>
@@ -132,38 +132,49 @@
                     <a href="#projects" class="hover:text-accent-blue transition">Projects</a>
                     <a href="#contact" class="hover:text-accent-blue transition">Contact</a>
                 </nav>
-                <button class="md:hidden p-2">
+                <button class="md:hidden p-2" id="mobile-menu-button">
                     <i class="fas fa-bars text-xl"></i>
                 </button>
             </div>
         </div>
     </header>
 
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden fixed inset-0 z-40 animated-gradient-bg flex items-center justify-center">
+        <nav class="flex flex-col items-center text-center gap-8">
+            <a href="#about" class="text-2xl font-bold uppercase tracking-widest">About</a>
+            <a href="#skills" class="text-2xl font-bold uppercase tracking-widest">Skills</a>
+            <a href="#experience" class="text-2xl font-bold uppercase tracking-widest">Experience</a>
+            <a href="#projects" class="text-2xl font-bold uppercase tracking-widest">Projects</a>
+            <a href="#contact" class="text-2xl font-bold uppercase tracking-widest">Contact</a>
+        </nav>
+    </div>
+
     <main>
         <section id="hero" class="min-h-screen flex items-center justify-center text-center overflow-hidden">
-            <div class="relative z-10 px-6">
-                <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-4 leading-tight">
+            <div class="relative z-10 px-4 sm:px-6">
+                <h1 class="text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tight mb-4 leading-tight">
                     <span class="block">Bang Codename</span>
                     <span class="bg-gradient-to-r from-accent-blue to-accent-purple bg-clip-text text-transparent">
                         Digital Craftsman
                     </span>
                 </h1>
-                <p class="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
+                <p class="text-base sm:text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
                     Membangun antarmuka masa depan, satu baris kode pada satu waktu.
                 </p>
                 <div class="mt-10">
-                    <a href="#projects" class="px-8 py-4 bg-gradient-to-r from-accent-blue to-accent-purple text-white rounded-full font-bold shadow-glow transition-transform duration-300 hover:scale-105">
+                    <a href="#projects" class="px-6 py-3 sm:px-8 sm:py-4 bg-gradient-to-r from-accent-blue to-accent-purple text-white rounded-full font-bold shadow-glow transition-transform duration-300 hover:scale-105 text-sm sm:text-base">
                         Lihat Karya Saya
                     </a>
                 </div>
             </div>
         </section>
 
-        <div class="max-w-5xl mx-auto px-6 space-y-24 pb-24">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 space-y-20 sm:space-y-24 pb-24">
             <section id="about" class="scroll-target">
                 <h2 class="text-3xl font-bold mb-8 section-title">Tentang Saya</h2>
-                <div class="glass-card p-8 rounded-3xl">
-                    <p class="text-lg leading-relaxed text-gray-300">
+                <div class="glass-card p-6 sm:p-8 rounded-3xl">
+                    <p class="text-base sm:text-lg leading-relaxed text-gray-300">
                         Saya adalah seorang web developer dengan hasrat untuk menciptakan pengalaman digital yang indah dan fungsional. Dengan pengalaman bertahun-tahun dalam ekosistem web modern, saya berfokus pada penulisan kode yang bersih, efisien, dan dapat diskalakan. Saya percaya teknologi harus digunakan untuk memberdayakan dan mempermudah kehidupan, dan itulah yang saya perjuangkan dalam setiap proyek.
                     </p>
                 </div>
@@ -172,7 +183,7 @@
             <section id="skills" class="scroll-target">
                 <h2 class="text-3xl font-bold mb-8 section-title">Keahlian</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div class="glass-card p-8 rounded-3xl space-y-6">
+                    <div class="glass-card p-6 sm:p-8 rounded-3xl space-y-6">
                         <div class="skill">
                             <h3 class="font-bold text-lg mb-2">Frontend</h3>
                             <div class="space-y-4">
@@ -187,7 +198,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="glass-card p-8 rounded-3xl space-y-6">
+                    <div class="glass-card p-6 sm:p-8 rounded-3xl space-y-6">
                          <div class="skill">
                             <h3 class="font-bold text-lg mb-2">Backend</h3>
                             <div class="space-y-4">
@@ -207,8 +218,8 @@
 
             <section id="experience" class="scroll-target">
                 <h2 class="text-3xl font-bold mb-12 section-title">Pengalaman</h2>
-                <div class="relative timeline ml-3">
-                    <div class="timeline-item ml-8 mb-12">
+                <div class="relative timeline ml-2 sm:ml-3">
+                    <div class="timeline-item ml-6 sm:ml-8 mb-12">
                         <div class="dot"></div>
                         <div class="glass-card p-6 rounded-2xl">
                             <p class="text-sm text-gray-400">2022 - Sekarang</p>
@@ -216,7 +227,7 @@
                             <p class="text-gray-300">Tech Solutions Inc.</p>
                         </div>
                     </div>
-                    <div class="timeline-item ml-8">
+                    <div class="timeline-item ml-6 sm:ml-8">
                          <div class="dot"></div>
                         <div class="glass-card p-6 rounded-2xl">
                             <p class="text-sm text-gray-400">2020 - 2022</p>
@@ -231,14 +242,14 @@
                 <h2 class="text-3xl font-bold mb-8 section-title">Proyek Pilihan</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div class="glass-card rounded-3xl overflow-hidden">
-                        <div class="p-8">
+                        <div class="p-6 sm:p-8">
                             <h3 class="text-xl font-bold mb-2">Project Alpha</h3>
                             <p class="text-gray-400 mb-4">Dashboard analitik SaaS dengan visualisasi data real-time.</p>
                             <a href="#" class="font-bold text-accent-blue hover:underline">Lihat Detail →</a>
                         </div>
                     </div>
                     <div class="glass-card rounded-3xl overflow-hidden">
-                        <div class="p-8">
+                        <div class="p-6 sm:p-8">
                             <h3 class="text-xl font-bold mb-2">Project Beta</h3>
                             <p class="text-gray-400 mb-4">Platform e-commerce dengan integrasi pembayaran dan fitur canggih.</p>
                              <a href="#" class="font-bold text-accent-blue hover:underline">Lihat Detail →</a>
@@ -250,7 +261,7 @@
             <section id="contact" class="scroll-target text-center">
                 <h2 class="text-3xl font-bold mb-4 section-title mx-auto">Hubungi Saya</h2>
                 <p class="text-lg text-gray-300 mb-8 max-w-xl mx-auto">Tertarik untuk berkolaborasi? Saya selalu terbuka untuk diskusi.</p>
-                <a href="mailto:emailanda@example.com" class="text-2xl font-bold bg-gradient-to-r from-accent-blue to-accent-purple bg-clip-text text-transparent hover:shadow-glow">
+                <a href="mailto:emailanda@example.com" class="text-xl sm:text-2xl font-bold bg-gradient-to-r from-accent-blue to-accent-purple bg-clip-text text-transparent hover:shadow-glow">
                     emailanda@example.com
                 </a>
             </section>
@@ -271,11 +282,11 @@
         const navbar = document.getElementById('navbar');
         window.addEventListener('scroll', () => {
             if (window.scrollY > 50) {
-                navbar.classList.add('py-2');
+                navbar.classList.add('py-2', 'sm:py-3');
                 navbar.classList.remove('py-4');
             } else {
                 navbar.classList.add('py-4');
-                navbar.classList.remove('py-2');
+                navbar.classList.remove('py-2', 'sm:py-3');
             }
         });
 
@@ -294,6 +305,33 @@
             el.style.opacity = '0';
             el.style.transform = 'translateY(30px)';
             observer.observe(el);
+        });
+
+        // Mobile Menu
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            // Toggle icon
+            const icon = mobileMenuButton.querySelector('i');
+            if (mobileMenu.classList.contains('hidden')) {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            } else {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            }
+        });
+
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                const icon = mobileMenuButton.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            });
         });
     </script>
 </body>
