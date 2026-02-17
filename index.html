@@ -47,7 +47,8 @@
             </span>
             <div class="flex items-center gap-6">
                 <div class="hidden md:flex gap-8 text-sm font-semibold uppercase tracking-widest">
-                    <a href="#projects" class="hover:text-blue-500 transition">Projects</a>
+                    <a href="#banner" class="hover:text-blue-500 transition">Banner</a>
+                    <a href="#cv" class="hover:text-blue-500 transition">CV</a>
                     <a href="#contact" class="hover:text-blue-500 transition">Contact</a>
                 </div>
                 <button onclick="document.documentElement.classList.toggle('dark')" class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 hover:ring-2 ring-blue-400 transition-all">
@@ -70,8 +71,8 @@
                 Halo, saya <span class="font-bold text-slate-900 dark:text-white border-b-2 border-blue-500">Bang Codename</span>. Fokus pada pengembangan website modern dengan pengalaman pengguna yang mulus.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="#projects" class="btn-interaction px-10 py-4 bg-slate-900 dark:bg-white text-white dark:text-slate-900 rounded-2xl font-bold">
-                    Lihat Portofolio
+                <a href="#cv" class="btn-interaction px-10 py-4 bg-slate-900 dark:bg-white text-white dark:text-slate-900 rounded-2xl font-bold">
+                    Lihat CV
                 </a>
                 <a href="#contact" class="btn-interaction px-10 py-4 border border-slate-200 dark:border-slate-700 rounded-2xl font-bold hover:bg-slate-50 dark:hover:bg-slate-800">
                     Hubungi Saya
@@ -80,47 +81,70 @@
         </div>
     </section>
 
-    <section id="projects" class="py-24 border-t border-slate-100 dark:border-slate-800">
-        <div class="max-w-6xl mx-auto px-6">
-            <div class="mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Karya Pilihan</h2>
-                <div class="h-1.5 w-16 bg-blue-600 rounded-full"></div>
+    <section id="banner" class="py-12 bg-blue-600 text-white">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h2 class="text-2xl md:text-3xl font-bold tracking-tight">"The best way to predict the future is to create it."</h2>
+        </div>
+    </section>
+
+    <section id="cv" class="py-24 border-t border-slate-100 dark:border-slate-800">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="mb-16 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Curriculum Vitae</h2>
+                <div class="h-1.5 w-16 bg-blue-600 rounded-full mx-auto"></div>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="project-card group bg-slate-50 dark:bg-slate-800/40 rounded-[2rem] overflow-hidden border border-slate-100 dark:border-slate-800 transition-all duration-300 hover:shadow-2xl">
-                    <div class="aspect-video bg-slate-200 dark:bg-slate-700 flex items-center justify-center overflow-hidden">
-                        <span class="text-slate-400 font-bold project-image transition-transform duration-500 text-sm italic">[ Screenshot Proyek 1 ]</span>
+            <!-- Pengalaman Kerja -->
+            <div class="mb-12">
+                <h3 class="text-2xl font-bold mb-6 border-l-4 border-blue-500 pl-4">Pengalaman Kerja</h3>
+                <div class="space-y-8">
+                    <div>
+                        <h4 class="text-xl font-bold">Senior Web Developer</h4>
+                        <p class="text-slate-600 dark:text-slate-400">Tech Company Inc. | 2022 - Sekarang</p>
+                        <ul class="list-disc list-inside mt-2 text-slate-600 dark:text-slate-400">
+                            <li>Mengembangkan dan memelihara aplikasi web skala besar.</li>
+                            <li>Berkolaborasi dengan tim desain untuk implementasi UI/UX.</li>
+                            <li>Meningkatkan performa aplikasi hingga 20%.</li>
+                        </ul>
                     </div>
-                    <div class="p-8">
-                        <div class="flex gap-2 mb-4">
-                            <span class="text-[10px] font-black px-3 py-1 bg-blue-100 text-blue-600 dark:bg-blue-900/30 dark:text-blue-400 rounded-lg uppercase">Next.js</span>
-                            <span class="text-[10px] font-black px-3 py-1 bg-purple-100 text-purple-600 dark:bg-purple-900/30 dark:text-purple-400 rounded-lg uppercase">Tailwind</span>
-                        </div>
-                        <h3 class="text-xl font-bold mb-2 group-hover:text-blue-500 transition">SaaS Analytics Dashboard</h3>
-                        <p class="text-slate-600 dark:text-slate-400 text-sm mb-6">Visualisasi data real-time dengan performa tinggi dan desain minimalis.</p>
-                        <a href="#" class="text-sm font-bold flex items-center gap-2 group-hover:gap-4 transition-all">
-                            View Case Study <span>→</span>
-                        </a>
+                    <div>
+                        <h4 class="text-xl font-bold">Junior Web Developer</h4>
+                        <p class="text-slate-600 dark:text-slate-400">Startup Digital | 2020 - 2022</p>
+                        <ul class="list-disc list-inside mt-2 text-slate-600 dark:text-slate-400">
+                            <li>Membantu membangun landing page dan situs e-commerce.</li>
+                            <li>Belajar dan menerapkan teknologi web modern.</li>
+                        </ul>
                     </div>
                 </div>
+            </div>
 
-                <div class="project-card group bg-slate-50 dark:bg-slate-800/40 rounded-[2rem] overflow-hidden border border-slate-100 dark:border-slate-800 transition-all duration-300 hover:shadow-2xl text-slate-400">
-                    <div class="aspect-video bg-slate-200 dark:bg-slate-700 flex items-center justify-center overflow-hidden text-sm italic">[ Screenshot Proyek 2 ]</div>
-                    <div class="p-8 text-slate-900 dark:text-slate-100">
-                        <div class="flex gap-2 mb-4"><span class="text-[10px] font-black px-3 py-1 bg-green-100 text-green-600 dark:bg-green-900/30 dark:text-green-400 rounded-lg uppercase">Vue.js</span></div>
-                        <h3 class="text-xl font-bold mb-2 group-hover:text-blue-500 transition">E-Commerce App</h3>
-                        <p class="text-slate-600 dark:text-slate-400 text-sm mb-6">Platform belanja modern dengan sistem filter yang canggih.</p>
-                        <a href="#" class="text-sm font-bold flex items-center gap-2 group-hover:gap-4 transition-all">View Case Study <span>→</span></a>
-                    </div>
+            <!-- Pendidikan -->
+            <div class="mb-12">
+                <h3 class="text-2xl font-bold mb-6 border-l-4 border-blue-500 pl-4">Pendidikan</h3>
+                <div>
+                    <h4 class="text-xl font-bold">Sarjana Teknik Informatika</h4>
+                    <p class="text-slate-600 dark:text-slate-400">Universitas Teknologi Digital | 2016 - 2020</p>
+                </div>
+            </div>
+
+            <!-- Keahlian -->
+            <div>
+                <h3 class="text-2xl font-bold mb-6 border-l-4 border-blue-500 pl-4">Keahlian</h3>
+                <div class="flex flex-wrap gap-4">
+                    <span class="bg-slate-200 dark:bg-slate-700 px-4 py-2 rounded-lg font-semibold">JavaScript</span>
+                    <span class="bg-slate-200 dark:bg-slate-700 px-4 py-2 rounded-lg font-semibold">React</span>
+                    <span class="bg-slate-200 dark:bg-slate-700 px-4 py-2 rounded-lg font-semibold">Node.js</span>
+                    <span class="bg-slate-200 dark:bg-slate-700 px-4 py-2 rounded-lg font-semibold">Tailwind CSS</span>
+                    <span class="bg-slate-200 dark:bg-slate-700 px-4 py-2 rounded-lg font-semibold">PHP</span>
+                    <span class="bg-slate-200 dark:bg-slate-700 px-4 py-2 rounded-lg font-semibold">Laravel</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer id="contact" class="py-24 bg-slate-50 dark:bg-slate-950/50">
+    <section id="contact" class="py-24 bg-slate-50 dark:bg-slate-950/50">
         <div class="max-w-4xl mx-auto px-6 text-center">
-            <div class="bg-white dark:bg-slate-800 p-12 md:p-20 rounded-[3rem] shadow-2xl border border-slate-100 dark:border-slate-700 mb-20">
+            <div class="bg-white dark:bg-slate-800 p-12 md:p-20 rounded-[3rem] shadow-2xl border border-slate-100 dark:border-slate-700">
                 <h2 class="text-4xl md:text-6xl font-extrabold mb-8 tracking-tighter">Mari Berkolaborasi.</h2>
                 <p class="text-slate-600 dark:text-slate-400 mb-12 text-lg">Siap untuk membawa ide Anda menjadi kenyataan?</p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
@@ -132,15 +156,17 @@
                     </a>
                 </div>
             </div>
-            
-            <div class="space-y-8">
-                <div class="flex justify-center gap-8 font-bold text-xs tracking-[0.2em] uppercase text-slate-500">
-                    <a href="#" class="hover:text-blue-500 transition">LinkedIn</a>
-                    <a href="#" class="hover:text-slate-900 dark:hover:text-white transition">GitHub</a>
-                    <a href="#" class="hover:text-pink-500 transition">Dribbble</a>
-                </div>
-                <p class="text-slate-400 text-sm">© 2026 Bang Codename. Handcrafted with Passion.</p>
+        </div>
+    </section>
+
+    <footer class="py-12 bg-slate-100 dark:bg-slate-900">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <div class="flex justify-center gap-8 font-bold text-xs tracking-[0.2em] uppercase text-slate-500 mb-8">
+                <a href="#" class="hover:text-blue-500 transition">LinkedIn</a>
+                <a href="#" class="hover:text-slate-900 dark:hover:text-white transition">GitHub</a>
+                <a href="#" class="hover:text-pink-500 transition">Dribbble</a>
             </div>
+            <p class="text-slate-400 text-sm">© 2026 Bang Codename. Handcrafted with Passion.</p>
         </div>
     </footer>
 
